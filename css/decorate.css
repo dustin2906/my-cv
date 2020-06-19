@@ -1,0 +1,463 @@
+.logo {
+  height:70px;
+}
+
+.icon {
+  height: 110px;
+  padding: 20px;
+  opacity: 0.5;
+}
+.icon:hover {
+  opacity:1;
+  padding: 5px;
+}
+
+.title-image {
+  position: relative;
+  padding-right: 20px;
+  box-sizing: inherit;
+  height:100%;
+  width: 100%;
+}
+
+.title-hr {
+  margin-left: 0;;
+  border-color: grey;
+  border-width: 0;
+  width: 13%;
+  height:2px;
+  background-color: grey;
+}
+
+.triangle:before { 
+  content: "";
+  border-color: transparent #64a19d;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.about-sizing {
+  box-sizing: inherit;
+  margin: 0.75em 0;
+  padding: 1 1em;
+  list-style: none;
+}
+.vl {
+  border-left: 3px solid black;
+  height: 300px;
+  border-color: grey;
+}
+.resume {
+  padding: 50px;
+}
+
+/* masthead circle */
+.loading {
+  width:350px;
+  height:350px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #e75c3c;
+  position: relative;
+  animation: a1 3s linear infinite;
+}
+
+.loading::before,.loading::after {
+  content:'';
+  width:350px;
+  height:350px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.loading span {
+  color:#fff;
+  position: absolute;
+  text-align: center;
+  width:350px;
+  height:350px;
+  line-height:50px;
+  padding-top:110px;
+  animation: a2 3s linear infinite;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 1.5rem;
+}
+
+.loading::before {
+  border-top: 10px solid #e67e22;
+  transform: rotate(120deg);
+}
+
+.loading::after {
+  border-top: 10px solid #3498db;
+  transform: rotate(240deg);
+};
+
+.loading span {
+  color:#fff;
+  position: absolute;
+  text-align: center;
+  animation: a2 3s linear infinite;
+}
+
+.content-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .content-desktop {
+      clear: both;
+      display: block;
+  }
+}
+@keyframes a1 {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes a2 {
+  to{
+    transform: rotate(-360deg);
+  }
+}
+
+/* testimonials */
+
+.testimonials-image1 {
+  padding: 0 20px 0 20px;
+}
+
+#testimonials {
+  background-color:#ef8172;
+}
+
+.testimonials-image {
+  width: 100%;
+  border-radius: 2%;
+  height: 350px;
+}
+
+.container-fluid {
+  padding: 5% 12% ;
+}
+
+.practical {
+  background-image: url(images/practical1.jpg)!important;
+  z-index: -1;
+}
+
+.title {
+  color: #64a19d;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 15px;
+  border-radius: 100%;
+  margin: 5px;
+  background: #64a19d;
+}
+
+/* Style the social media icons with color, bar left, bar right*/
+.icon-bar a:hover {
+  background-color: grey;
+}
+
+.bounce:hover { 
+  animation: bounce 2s linear; }
+
+@keyframes bounce {
+  20%,50%,80%,to{
+      transform: translateY(0);
+  }
+  40%{
+      transform: translateY(-30px);
+  }
+  70%{
+      transform: translateY(-15px);
+  }
+  90%{
+      transform: translateY(-4px);
+  }
+}
+
+.vertical-bar {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+  color:#64a19d;
+  font-size: 15px;
+}
+.vertical-left {
+  writing-mode: vertical-rl;
+  border-left: 3px solid #64a19d;
+  height: 100px;
+  vertical-align: center;
+  margin-left:22px;
+  bottom: 0;
+}
+
+.email-bar {
+  position: fixed;
+  right:0;
+  top:80%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.email-bar a {
+  font-size: 15px;
+  writing-mode: vertical-rl;
+  display: block;
+  text-align: center;
+  color: #64a19d;
+}
+
+.vertical-right {
+  writing-mode: vertical-rl;
+  border-left: 3px solid #64a19d;
+  height: 200px;
+  padding:10px;
+  margin:8px
+}
+
+/* Portfolio */
+
+.portfolio-item {
+  display: block;
+  overflow: hidden;
+  margin: auto auto 1rem;
+  position: relative;
+}
+
+.portfolio-item .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+}
+
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+  
+}
+
+.portfolio-item .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+
+  .portfolio-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  
+  .portfolio-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    opacity: 0.3;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+/* Education and Experience*/
+
+.container ul ul {
+  display: none;
+}
+
+.container li {
+  list-style-type: none;
+}
+
+.container li.active ul {
+  display: block;
+}
+
+.tab {
+  margin-left: 4.5em;
+}
+.scroll {
+  color:#64a19d;
+}
+
+/* nav button */
+
+.nav-button {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 1rem;
+  border: 1px solid #64a19d;
+}
+
+.nav-button:hover, .nav-button:focus {
+  text-decoration: none;
+}
+
+.nav-button.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
+
+/* rotate images */
+.contain {
+  margin: 20px;
+}
+
+@media (max-width: 600px) {
+.contain {
+  margin:0px;
+}
+}
+
+.element {
+  display: inline-block;
+  background-color: none;
+  height: 100px;
+  width: 100px;
+  padding: 1px;
+  margin-left:  15px;
+  margin-right: 15px;
+  -webkit-animation: roll 3s infinite;
+  -webkit-transform: rotate(30deg);
+  opacity: 0.5; 
+}
+
+.element:hover {
+  opacity:1;
+}
+
+.rotate {
+  height:100px;
+  width: 100px;
+}
+
+
+@keyframes roll {
+  0% {
+    -webkit-transform:rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+  -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+  }
+}
+
+
+#resume-section {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../images/bg-signup.jpg");
+  color: #64a19d;
+  padding: 20px;
+}
+.modal-fade {
+  color: black;
+}
+
+
+/* Flip box image */
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 800px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+  transform: rotateY(180deg);
+}
+
+
+/* footer */
+pre {
+  color:#64a19d;
+}
+
