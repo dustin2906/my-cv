@@ -10257,7 +10257,7 @@ body {
   font-size: 2rem;
 
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
   .masthead {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../images/data1.png");
     padding: 7rem 2rem;
@@ -10274,6 +10274,10 @@ body {
   }
 }
 @media (min-width: 768px) {
+  .masthead {
+    padding: 7rem 2rem;
+  }
+
   .masthead h1 {
     font-size: 4rem;
     line-height: 4rem;
