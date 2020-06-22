@@ -1,3 +1,14 @@
+.about-sizing {
+  box-sizing: inherit;
+  margin: 0.75em 0;
+  padding: 1 1em;
+  list-style: none;
+}
+
+.buttonFeedback {
+  padding-left:10px;
+}
+
 .logo {
   height:70px;
 }
@@ -42,12 +53,7 @@
   position: relative;
 }
 
-.about-sizing {
-  box-sizing: inherit;
-  margin: 0.75em 0;
-  padding: 1 1em;
-  list-style: none;
-}
+
 .vl {
   border-left: 3px solid black;
   height: 300px;
@@ -134,12 +140,25 @@
 .testimonials-img {
 position: relative;
 }
+
 .testimonials-image {
   border-radius: 2%;
-  width:90%;
+  width:100%;
+  height:auto;
   height: 350px;
 }
+@media (max-width: 768px) {
+  .testimonials-img {
+    position: relative;
+    }
 
+  .testimonials-image {
+    border-radius: 2%;
+    width:100%;
+    height: auto;
+    height: 150px;
+  }
+}
 .container-fluid {
   padding: 5% 12% ;
 }
