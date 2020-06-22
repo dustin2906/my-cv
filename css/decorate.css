@@ -131,25 +131,18 @@
 }
 
 /* testimonials */
-
-.testimonials-image1 {
-  padding: 0 20px 0 20px;
+.testimonials-img {
+position: relative;
 }
-
-#testimonials {
-  background-color:#ef8172;
-}
-
 .testimonials-image {
-  width: 100%;
   border-radius: 2%;
+  width:90%;
   height: 350px;
 }
 
 .container-fluid {
   padding: 5% 12% ;
 }
-
 .practical {
   background-image: url(images/practical1.jpg)!important;
   z-index: -1;
@@ -374,8 +367,8 @@
 .element {
   display: inline-block;
   background-color: none;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   padding: 1px;
   margin-left:  15px;
   margin-right: 15px;
